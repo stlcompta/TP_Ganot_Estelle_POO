@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adresse</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div th:include="navigation"/>
+
+<form action ="/meteo" method ="post">
+  <div >
+    <label for =" address "> Please input your
+      adress : </label >
+    <input name ="address" id=" address ">
+  </div >
+  <div >
+    <button > Get the weather at the given
+      address ! </button>
+  </div >
+</form >
+
+</body>
+</html>

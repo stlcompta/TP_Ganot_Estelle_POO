@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+<div th:include="navigation"/>
+
+<p th:text="${adresse}"/>
+
+<ul th:each="feat:${feature}">
+	<li th:text="@{'Lattitude : ' + ${feat.geometry.coordinates[1]}}" />
+	<li th:text="@{'Longitude : ' + ${feat.geometry.coordinates[0]}}" />
+</ul>
+
+
+</body>
+</html>
